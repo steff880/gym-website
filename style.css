@@ -113,6 +113,24 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+/* .hero-image-box {
+    width: 90rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/img/hero.jpg);
+    background-size: cover;
+    background-position-x: 50%;
+} */
+
+/* 
+===================
+NAVIGATION
+===================
+*/
+
 header {
     min-height: 10rem;
     background-color: var(--bg-dark);
@@ -120,11 +138,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-inline: 10rem;
+    padding-inline: 15rem;
 }
 
 .navigation {
     width: max-content;
+    z-index: 999;
 }
 
 .logo-container {
@@ -159,4 +178,84 @@ header {
     color: var(--color-white);
     font-size: 1.4rem;
     font-weight: 700;
+}
+
+/* 
+================
+HERO SECTION
+================
+*/
+
+.hero {
+    height: calc(100vh - 10rem);
+    position: relative;
+    background-color: var(--bg-dark);
+    background-image: linear-gradient(105deg, #000 0%, #000 25%, transparent 30%), url(/img/hero.jpg);
+    background-size: cover;
+    background-position-x: 350px;
+    background-repeat: no-repeat;
+    padding-left: 15rem;
+    padding-top: 0.1px;
+}
+
+.hero h1 {
+    width: max-content;
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--color-white);
+    margin-top: 6em;
+    line-height: 2.5;
+    letter-spacing: 5px;
+    margin-left: 10rem;
+    /* text-shadow: -4px 1px 2px rgba(255, 255, 255, 0.5); */
+}
+
+.hero .subheading {
+    width: max-content;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: var(--color-white);
+    text-align: center;
+
+    margin-left: 10rem;
+}
+
+.hero-btn-box {
+    width: 30%;
+    /* display: flex;
+    justify-content: center; */
+    margin-top: 10rem;
+    text-align: center;
+    margin-left: 10rem;
+}
+
+.btn {
+    width: max-content;
+    padding: 1rem 3.5rem;
+    font-size: 2.2em;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.btn-hero {
+    color: var(--color-white);
+    border: 1px solid var(--color-white);
+    /* box-shadow: -2px 1px 40px 5px rgba(255, 255, 255, 0.1); */
+}
+
+.btn-hero span i {
+    font-size: 1.8rem;
+}
+
+.down {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--color-white);
+    font-size: 3rem;
+    z-index: 7;
 }
